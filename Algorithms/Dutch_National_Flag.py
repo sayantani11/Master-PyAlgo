@@ -36,8 +36,15 @@ def print_dnf(elements):
 
 if __name__=='__main__':
 
-    numbers=[0,1,1,0,1,2,1,2,0,0,1]
-    size=len(numbers)
+    numbers=[]
 
-    numbers=dnfsort(numbers,size)
+    n=int(input("Enter the number of elements: "))
+
+    print("Enter the elements: ")
+
+    for i in range(0,n):
+        element=int(input())
+
+        numbers.append(element)
+    numbers=dnfsort(numbers,n)
     print_dnf(numbers)
